@@ -1,5 +1,55 @@
 <!DOCTYPE html>
 <style> 
+head {
+    margin-bottom: 100px;
+    position: absolute;
+    width: 100%;
+    top: 1px;
+}
+img{
+    display: block;
+  margin-left: 11%;
+  margin-right: 10%;
+  width: 75%;
+  object-fit: scale-down;
+
+}
+body {
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+footer {
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+ol {
+    list-style-type: none;
+    background-color:rgb(236, 236, 236);
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    vertical-align: bottom;
+    position:relative;
+}
+
+li {
+  display: inline;
+  float: left;
+}
+
+div {
+    float: right;
+}
+
 .button {
     background: whitesmoke;
     color: rgb(92, 91, 91);
@@ -8,6 +58,7 @@
     border: none;
     outline: none;
 }
+
 #site-search {
     background: white;
     border-radius: 20px;
@@ -15,17 +66,57 @@
     border: rgb(182, 178, 178) 1px solid;
     
 }
+
 #site-search:hover{
     outline: rgba(182, 178, 178, 0.164) solid 2px;
 }
+
 .button:hover{
     outline: rgb(170, 169, 169) solid 1px;
     color: black;
 }
 
+a {
+color: black;
+text-decoration: none;
+padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul li:last-child a {
+    color: white;
+    border: 1px solid #4285f4;
+    background:  #4387fd;
+    font-size: 13px;
+    font-weight: none;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    border-radius: 2px;
+}
+
 </style>
 
 <html lang="en">
+
+
+<head>
+    <title>Google</title>
+
+    <ul id="sign">
+        <li><a href="about">About</li>
+        <li><a href="store">Store</a></li>
+        <div><li><a href="gmail">Gmail</a></li>
+        <li><a href="images">Images</a></li>
+        <li><a href="singin">Sign in</a></li></div>
+    </ul>
+
+</head>
+
+<body>
     <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
     alt="google's colorful and iconic logo";
 
@@ -34,11 +125,22 @@
 aria-label="search through the internet"> </input>
 <button class="button">Google Search</button>
 
-<head>
-    <title>Google</title>
-</head>
-<body>
+<label for="lucky"></label>
+<input type="lucky" id="feelinglucky" name="lucky"
+aria-label="im feelingl lucky"> </input>
+<button class="button">I'm Feeling Lucky</button>
 
 </body>
+
+<footer>
+    <ol>
+        <li><a href="advertising">Advertising</li>
+        <li><a href="business">Business</a></li>
+        <li><a href="howsearchworks">How Search works</a></li>
+        <div><li><a href="privacy">Privacy</a></li>
+        <li><a href="terms">Terms</a></li>
+        <li><a href="settings">Settings</a></li></div>
+    </ol>
+</footer>
 
 </html>
