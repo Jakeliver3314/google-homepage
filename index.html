@@ -7,11 +7,13 @@ head {
     top: 1px;
 }
 img{
-    display: block;
-  margin-left: 11%;
-  margin-right: 10%;
-  width: 75%;
-  object-fit: scale-down;
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 18%;
+    margin-right: 10%;
+    margin-bottom: -4%;
+    width: 45%;
+    object-fit: scale-down;
 
 }
 body {
@@ -20,25 +22,25 @@ body {
     position: relative;
 }
 footer {
-    margin-top: 100px;
+    margin-top: 10px;
     position: absolute;
     width: 100%;
     bottom: 1px;
 }
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
+  margin: 2;
+  padding: 2;
+  font-size: 12px;
 }
 ol {
     list-style-type: none;
     background-color:rgb(236, 236, 236);
-    margin: 5px;
-    padding: 5px;
-    font-size: 16px;
+    margin-bottom: 5px;
+    padding: 1%;
+    font-size: 14px;
     vertical-align: bottom;
-    position:relative;
+    position: relative;
 }
 
 li {
@@ -54,17 +56,36 @@ div {
     background: whitesmoke;
     color: rgb(92, 91, 91);
     border-radius: 4px;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    outline: none;
+    outline: none;  
+    position: absolute;
+    bottom: 580px;
+    right: 790px;
+
+}
+
+.submit {
+    background: whitesmoke;
+    color: rgb(92, 91, 91);
+    border-radius: 4px;
+    padding: 12px;
+    border: none;
+    outline: none;  
+    position: absolute;
+    bottom: 580px;
+    right: 950px;
 }
 
 #site-search {
     background: white;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 23px;
+    padding: 13px;
     border: rgb(182, 178, 178) 1px solid;
-    
+    width: 600px;
+    margin-top: -95%;
+    margin-left: 0%;
+    position: relative;
 }
 
 #site-search:hover{
@@ -76,8 +97,13 @@ div {
     color: black;
 }
 
+.submit:hover {
+    outline: rgb(170, 169, 169) solid 1px;
+    color: black;
+}
+
 a {
-color: black;
+color: rgb(95, 93, 93);
 text-decoration: none;
 padding: 5px;
 }
@@ -90,8 +116,8 @@ ul li:last-child a {
     color: white;
     border: 1px solid #4285f4;
     background:  #4387fd;
-    font-size: 13px;
-    font-weight: none;
+    font-size: 12px;
+    font-weight: bold;
     display: inline-block;
     line-height: 28px;
     padding: 0 12px;
@@ -123,11 +149,9 @@ ul li:last-child a {
 <label for="search"></label>
 <input type="search" id="site-search" name="search"
 aria-label="search through the internet"> </input>
-<button class="button">Google Search</button>
+<button class="submit">Google Search</button>
 
 <label for="lucky"></label>
-<input type="lucky" id="feelinglucky" name="lucky"
-aria-label="im feelingl lucky"> </input>
 <button class="button">I'm Feeling Lucky</button>
 
 </body>
